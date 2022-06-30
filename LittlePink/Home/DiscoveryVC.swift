@@ -16,6 +16,16 @@ class DiscoveryVC: ButtonBarPagerTabStripViewController ,IndicatorInfoProvider {
         // Do any additional setup after loading the view.
     }
     
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        var vcs: [UIViewController] = []
+        for channel in kChannels {
+            let vc = storyboard!.instantiateViewController(withIdentifier: kWaterFallVCID) as! WaterFallVC
+            vc.channel = channel
+            vcs.append(vc)
+        }
+        return vcs
+        
+    }
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "发现")
     }
