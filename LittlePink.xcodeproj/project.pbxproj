@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0961610AA6343A52AE0899E0 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394FABB44508AA49A30D40BA /* Pods_LittlePink.framework */; };
 		9A137A9D286CB1190008BC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A137A9C286CB1190008BC05 /* AppDelegate.swift */; };
 		9A137A9F286CB1190008BC05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A137A9E286CB1190008BC05 /* SceneDelegate.swift */; };
 		9A137AA1286CB1190008BC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A137AA0286CB1190008BC05 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394FABB44508AA49A30D40BA /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7771D49FC15B78DA37B17A7C /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		9A137A99286CB1190008BC05 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A137A9C286CB1190008BC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A137A9E286CB1190008BC05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9A137AA8286CB11E0008BC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A137AAB286CB11E0008BC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A137AAD286CB11E0008BC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB67382D85B8F1348F450C01 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0961610AA6343A52AE0899E0 /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0BAB6AA9EF8CDD22F33AB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB67382D85B8F1348F450C01 /* Pods-LittlePink.debug.xcconfig */,
+				7771D49FC15B78DA37B17A7C /* Pods-LittlePink.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53706C5FA0623ED0325CC5A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394FABB44508AA49A30D40BA /* Pods_LittlePink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A137A90286CB1190008BC05 = {
 			isa = PBXGroup;
 			children = (
 				9A137A9B286CB1190008BC05 /* LittlePink */,
 				9A137A9A286CB1190008BC05 /* Products */,
+				1B0BAB6AA9EF8CDD22F33AB3 /* Pods */,
+				53706C5FA0623ED0325CC5A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A137AB0286CB11E0008BC05 /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
+				B1D77AA5D06870282733C05A /* [CP] Check Pods Manifest.lock */,
 				9A137A95286CB1190008BC05 /* Sources */,
 				9A137A96286CB1190008BC05 /* Frameworks */,
 				9A137A97286CB1190008BC05 /* Resources */,
+				E4F308F3A8210D78876D329B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1D77AA5D06870282733C05A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F308F3A8210D78876D329B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A137A95286CB1190008BC05 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		9A137AB1286CB11E0008BC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB67382D85B8F1348F450C01 /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,13 +364,14 @@
 				DEVELOPMENT_TEAM = 89WMAE36C9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittlePink/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
+				INFOPLIST_KEY_CFBundleDisplayName = "小红书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +387,7 @@
 		};
 		9A137AB2286CB11E0008BC05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7771D49FC15B78DA37B17A7C /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,13 +396,14 @@
 				DEVELOPMENT_TEAM = 89WMAE36C9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittlePink/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
+				INFOPLIST_KEY_CFBundleDisplayName = "小红书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
