@@ -45,7 +45,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         let nearByVC = storyboard!.instantiateViewController(identifier: kNearByVCID)
         let discoveryVC = storyboard!.instantiateViewController(identifier: kDiscoveryVCID)
         
-        return [followVC,nearByVC,discoveryVC]
+        return [discoveryVC,followVC,nearByVC]
     }
     /*
     // MARK: - Navigation

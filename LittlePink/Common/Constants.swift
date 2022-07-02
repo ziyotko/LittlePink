@@ -18,4 +18,6 @@ let kWaterFallCellID = "WaterFallCellID"
 
 let kWaterFallPadding: CGFloat  = 4
 
+//MARK: - 业务逻辑相关
 let kChannels = ["推荐","旅行","娱乐","才艺","美妆"]
+let kMaxPhotoCount = 9 //ImagePicker 允许用户最多选几张
